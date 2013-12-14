@@ -15,9 +15,11 @@ by repacking it.
 ``` js
 var pack = require('npmd-pack')
 
-pack(process.cwd())
+pack(process.cwd(), {})
   .pipe(fs.createWriteStream('../tarball.tgz'))
 ```
+
+`opts` are passed through to [tar](https://github.com/isaacs/node-tar)
 
 ## License
 
