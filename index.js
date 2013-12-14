@@ -6,9 +6,12 @@ var zlib   = require('zlib')
 
 var pack = module.exports = function (folder, opts) {
   var last
-
   var opts = opts || {}
-
+  // so, when you create a Date with a unix time, 
+  // it's sneaks in your timezone too.
+  // because that is what you wanted, right?
+  // also notice that on Date there is no way to SET the timezone...
+  // except this...
   var offset = new Date().getTimezoneOffset() * -1
   var THE_BEGINNING_OF_TIME = new Date(offset)
 
@@ -36,4 +39,4 @@ var pack = module.exports = function (folder, opts) {
 }
 
 if(!module.parent)
-  pack(process.cwd()).pipe(process.stdout)
+  pack(process.argv[2] || process.cwd()).pipe(process.stdout)
