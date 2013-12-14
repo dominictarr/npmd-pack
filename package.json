@@ -1,7 +1,7 @@
 {
   "name": "npmd-pack",
-  "description": "",
-  "version": "0.0.0",
+  "description": "turn a directory into a tarball for npm.",
+  "version": "1.0.0",
   "homepage": "https://github.com/dominictarr/npmd-pack",
   "repository": {
     "type": "git",
