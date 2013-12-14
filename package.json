@@ -1,0 +1,20 @@
+{
+  "name": "npmd-pack",
+  "description": "",
+  "version": "0.0.0",
+  "homepage": "https://github.com/dominictarr/npmd-pack",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dominictarr/npmd-pack.git"
+  },
+  "dependencies": {
+    "fstream-npm": "~0.1.6",
+    "tar": "~0.1.19"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "set -e; for t in test/*.js; do node $t; done"
+  },
+  "author": "Dominic Tarr <dominic.tarr@gmail.com> (dominictarr.com)",
+  "license": "MIT"
+}

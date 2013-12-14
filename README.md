@@ -1,0 +1,6 @@
+# npmd-pack
+
+
+## License
+
+MIT
